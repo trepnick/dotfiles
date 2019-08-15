@@ -98,6 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias -g me="trepnick"
+alias please='sudo $(fc -ln -1)'
 
 # USER INPUTS
 # Ben Haines
@@ -106,3 +107,4 @@ if ! [[ $PATH =~ '/home/trepnick/bin*' ]]
 then
     export PATH=/home/trepnick/bin:$PATH
 fi
+export PATH=$HOME/.cargo/bin:$PATH
