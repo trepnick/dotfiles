@@ -98,7 +98,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias -g me="trepnick"
-alias please='sudo $(fc -ln -1)'
+alias fuck='sudo $(fc -ln -1)'
+alias please="sudo"
 
 # USER INPUTS
 # Ben Haines
