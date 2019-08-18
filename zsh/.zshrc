@@ -8,7 +8,8 @@ export ZSH="/home/trepnick/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="half-life"
+ZSH_THEME="wedisagree"
+# Favorites: half-life, junkfood, wedisagree
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 alias -g me="trepnick"
 alias fuck='sudo $(fc -ln -1)'
 alias please="sudo"
+alias pageit='$(fc -ln -1) | less'
 
 # USER INPUTS
 # Ben Haines
@@ -108,4 +110,8 @@ if ! [[ $PATH =~ '/home/trepnick/bin*' ]]
 then
     export PATH=/home/trepnick/bin:$PATH
 fi
-export PATH=$HOME/.cargo/bin:$PATH
+if ! [[ $PATH =~ '/home/trepnick/.cargo/bin*' ]]
+then
+    export PATH=$HOME/.cargo/bin:$PATH
+fi
+
