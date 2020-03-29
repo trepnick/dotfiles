@@ -283,7 +283,7 @@ let g:jedi#smart_auto_mappings = 0
 "map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Work with virtualenvs
-let g:python3_host_prog = '/bin/python3' " Python 3
+let g:python3_host_prog = '/usr/bin/python3' " Python 3
 
 " Show jedi docstrings
 let g:deoplete#sources#jedi#show_docstring = 1

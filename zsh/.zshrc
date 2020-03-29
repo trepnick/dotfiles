@@ -69,7 +69,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker sudo )
+plugins=(git docker sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,7 +102,9 @@ alias -g me="trepnick"
 alias fuck='sudo $(fc -ln -1)'
 alias please="sudo"
 alias pageit='$(fc -ln -1) | less'
-
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="\vim"
 # USER INPUTS
 # Ben Haines
 
