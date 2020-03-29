@@ -9,7 +9,7 @@ export ZSH="/home/trepnick/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="wedisagree"
-# Favorites: half-life, junkfood, wedisagree
+# Favorites: half-life, junkfood, wedisagree gnzh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -69,7 +69,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker sudo ubuntu)
+plugins=(git docker sudo )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,13 +105,9 @@ alias pageit='$(fc -ln -1) | less'
 
 # USER INPUTS
 # Ben Haines
-export BROWSER=lynx
+
 if ! [[ $PATH =~ '/home/trepnick/bin*' ]]
 then
     export PATH=/home/trepnick/bin:$PATH
-fi
-if ! [[ $PATH =~ '/home/trepnick/.cargo/bin*' ]]
-then
-    export PATH=$HOME/.cargo/bin:$PATH
 fi
 
